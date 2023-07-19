@@ -12,7 +12,7 @@ namespace atividade
           string var_endereco = Console.ReadLine();
           Console.WriteLine("É pessoa fisica (F) ou pessoa juridica (J) ? ");
           string var_tipo = Console.ReadLine();
-          if (var_tipo == "F"){
+          if (var_tipo == "F" || var_tipo == "f"){
             //pessoa fisica
             Pessoa_Fisica pf = new Pessoa_Fisica();
             pf.nome = var_nome;
@@ -33,7 +33,7 @@ namespace atividade
             Console.WriteLine("Imposto: " + pf.valor_imposto.ToString("C"));
             Console.WriteLine("Total a Pagar: " + pf.total.ToString("C"));
           }
-          if (var_tipo == "J"){
+          if (var_tipo == "J" || var_tipo == "j"){
             //Pessoa Juridica
 
             Pessoa_Juridica pj = new Pessoa_Juridica();
